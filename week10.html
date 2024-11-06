@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Input Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <label for="numberInput">Some random number</label>
+        <input type="number" id="numberInput">
+        <br><br>
+        <button onclick="submitNumber()">Enter</button>
+        <h2 id="demo"></h2>
+    </div>
+
+    <script>
+        function submitNumber() {
+            const numberValue = document.getElementById("numberInput").value;
+           document.getElementById("demo").innerHTML = "You entered this value:" + numberValue;
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+       
+
+   
+
